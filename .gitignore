@@ -3,3 +3,4 @@
 node_modules/
 _multiconfig.yml
 .idea
+.env
