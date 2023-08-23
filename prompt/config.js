@@ -5,6 +5,6 @@ dotenv.config()
 
 var config = {
     "OPENAI_API_KEY": process.env.OPENAI_API_KEY,
-    "OPENAI_API_BASE_URL": process.env.OPENAI_API_BASE_URL
+    "OPENAI_API_BASE_PATH": process.env.OPENAI_API_BASE_PATH
 }
 module.exports = config;

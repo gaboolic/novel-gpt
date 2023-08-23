@@ -8,10 +8,10 @@ const config = require("./config")
 const llm = new OpenAI({
     openAIApiKey: config.OPENAI_API_KEY,
     modelName: "gpt-3.5-turbo-0613",
-    timeout: 5000,
-}, { basePath: config.OPENAI_API_BASE_URL }
+    timeout: 10000,
+}, { basePath: config.OPENAI_API_BASE_PATH }
 );
-console.log(llm)
+// console.log(llm)
 
 const prompt = PromptTemplate.fromTemplate("What is a good name for a company that makes {product}?");
 
@@ -28,7 +28,7 @@ async function main() {
     //     new HumanChatMessage("Translate: I love programming."),
     // ]);
     // const result = await llm.predict("Translate this sentence from English to French. I love programming.")
-    const result = await chain.run("111")
+    const result = await chain.run("socks")
 
     console.log(result);
 }
