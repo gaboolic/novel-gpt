@@ -4,6 +4,7 @@ const { LLMChain } = require("langchain/chains");
 const { PromptTemplate } = require("langchain/prompts");
 const config = require("../prompt/config")
 
+//https://js.langchain.com/docs/expression_language/cookbook/prompt_llm_parser
 
 const model = new ChatOpenAI({
     openAIApiKey: config.OPENAI_API_KEY,
