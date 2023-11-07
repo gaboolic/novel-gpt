@@ -2,7 +2,7 @@ const { OpenAI } = require("langchain/llms/openai");
 const { HumanChatMessage, SystemChatMessage } = require("langchain/schema");
 const { LLMChain } = require("langchain/chains");
 const { PromptTemplate } = require("langchain/prompts");
-const config = require("./config")
+const config = require("../prompt/config")
 
 
 const llm = new OpenAI({

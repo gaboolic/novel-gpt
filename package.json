@@ -14,7 +14,7 @@
     "dotenv": "^16.3.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "langchain": "^0.0.132",
+    "langchain": "^0.0.182-rc.1",
     "morgan": "~1.9.1",
     "openai": "^4.0.1",
     "pug": "2.0.0-beta11",
